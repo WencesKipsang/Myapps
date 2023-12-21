@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etNum3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="319dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNum4" />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="225dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Enter first Number"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="234dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:hint="Enter second Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="129dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="multiplyNumbers"
+        android:text="Multiply"
+        app:layout_constraintBottom_toTopOf="@+id/etView"
+        app:layout_constraintEnd_toEndOf="@+id/etView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etView"
+        app:layout_constraintTop_toBottomOf="@+id/etNum2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etView"
+        android:layout_width="253dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="97dp"
+        android:text="Answer :"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etNum4"
+        android:layout_width="230dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="297dp"
+        android:layout_marginBottom="298dp"
+        android:ems="10"
+        android:hint="Enter the third Number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
